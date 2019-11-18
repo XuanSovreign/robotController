@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/header_view"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="#e7eaee"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_fly_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:src="@mipmap/text_immerse" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="52dp">
+
+                <ImageView
+                    android:id="@+id/iv_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:src="@drawable/iv_up_selector" />
+
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:src="@drawable/iv_back_selector" />
+
+                <ImageView
+                    android:id="@+id/iv_play"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:src="@drawable/iv_play_selector" />
+
+                <ImageView
+                    android:id="@+id/iv_stop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:src="@drawable/iv_stop_selector" />
+
+                <ImageView
+                    android:id="@+id/iv_down"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/iv_down_selector" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical">
+
+                <CheckBox
+                    android:id="@+id/cb_voice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/iv_voice_selector"
+                    android:button="@null" />
+
+                <SeekBar
+                    android:id="@+id/seekbar_voice"
+                    android:layout_width="480dp"
+                    android:layout_height="wrap_content"
+                    android:duplicateParentState="true"
+                    android:max="100"
+                    android:visibility="gone"
+                    android:maxHeight="8dp"
+                    android:minHeight="8dp"
+                    android:paddingEnd="0dp"
+                    android:paddingStart="0dp"
+                    android:progressDrawable="@drawable/progress_list"
+                    android:splitTrack="false"
+                    android:thumb="@drawable/seekbar_thumb_style"
+                    android:thumbOffset="0dp" />
+
+                <ImageView
+                    android:id="@+id/iv_voice_up"
+                    android:layout_width="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/iv_voice_up_selector"/>
+                <ImageView
+                    android:id="@+id/iv_voice_down"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/iv_voice_down_selector"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="93dp"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/iv_fly_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/led_icon" />
+
+
+            <ImageView
+                android:id="@+id/switch_fly_control"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="17dp"
+                android:src="@mipmap/switch_close" />
+
+        </LinearLayout>
+
+
+
+        <include layout="@layout/fragment_immerse_hardware"/>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

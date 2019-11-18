@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/iv_bg"
+    tools:context="com.space.robotcontroller.MainActivity">
+
+  <!--  <RelativeLayout
+        android:id="@+id/rv_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/iv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/iv_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="130dp"/>
+
+        <RadioButton
+            android:id="@+id/rb_open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:layout_marginTop="65dp"
+            android:layout_marginStart="395dp"
+            android:layout_below="@id/iv_title"
+            android:background="@drawable/iv_open_selector"/>
+
+        <RadioButton
+            android:id="@+id/rb_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:layout_below="@id/iv_title"
+            android:layout_marginTop="65dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="395dp"
+            android:background="@drawable/iv_close_selector"/>
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:id="@+id/fl_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RadioGroup
+        android:id="@+id/rg_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="116dp"
+        android:paddingEnd="116dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="70dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_fly"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:background="@drawable/iv_fly_selector"/>
+
+        <RadioButton
+            android:id="@+id/rb_immerse"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:background="@drawable/iv_immerse_selector"/>
+        <RadioButton
+            android:id="@+id/rb_meet"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:background="@drawable/iv_meet_selector"/>
+        <RadioButton
+            android:id="@+id/rb_office"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:background="@drawable/iv_office_selector"/>
+    </RadioGroup>-->
+
+
+</RelativeLayout>
